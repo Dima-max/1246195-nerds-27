@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
     <title>Магазин готовых шаблонов</title>
+	<link href="style.css" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -10,7 +11,7 @@
     <nav>
       <ul>
            <li> <a href="index.html"> <img src="img/nerds-logo.png" alt="Логотип"> </a></li>
-           <li> <a href="#">Студия</a> </li>
+           <li> <a href="index.html">Студия</a> </li>
            <li> <a href="#">Клиенты</a> </li>
            <li> <a href="#">Магазин</a> </li>
            <li> <a href="#">Контакты</a> </li>
@@ -29,7 +30,7 @@
 
 <section> 
 
-       <h2> Фильтр товаров 1</h2>
+       <h2 class="visually-hidden"> Фильтр товаров 1</h2>
        <!-- Здесь будет форма -->
 
   <button> Показать </button>
@@ -38,7 +39,7 @@
 
 <section>
 
-    <h2> Фильтр товаров 2</h2>
+    <h2 class="visually-hidden"> Фильтр товаров 2</h2>
   Сортировать:
   
   <ul>
@@ -48,37 +49,99 @@
   </ul>
 </section>
 
+<section>
+        <h2 class="visually-hidden"> Фильтр товаров 3</h2>
+             
+			<form class="filter" method="get" action="#">
+			
+			<fieldset>
+			   <legend>Сетка</legend>
+			   <ul>
+			         <li>
+					     <input type="radio" name="type-of-grid" value="adaptive" id="filter-adaptive">
+					     <label for="filter-adaptive">Адаптивная</label>
+                      </li>
+			   
+			         <li>
+					     <input type="radio" name="type-of-grid" value="fixed" id="filter-fixed">
+					     <label for="filter-fixed">Фиксированная</label>
+                     </li>
+			   
+			         <li>
+					     <input type="radio" name="type-of-grid" value="elastic" id="filter-elastic">
+					      <label for="filter-elastic">Резиновая</label>
+                     </li>
+			     </ul>
+			</fieldset>
+			
+			<fieldset>
+			    <legend>Особенности</legend>
+				   <ul>
+				      <li>
+					     <input type="checkbox" name="slider" id="filter-slider">
+					     <label for="filter-slider">Слайдер</label>
+					  </li>
+					 
+					 <li>
+					     <input type="checkbox" name="advantages" id="filter-advantages">
+					     <label for="filter-advantages">Блок преимуществ</label>
+					 </li>
+					 
+					 <li>
+					     <input type="checkbox" name="news" id="filter-news">
+					     <label for="filter-news">Новости</label>
+					  </li>
+					 
+					 <li>
+					     <input type="checkbox" name="gallery" id="filter-gallery">
+					     <label for="filter-gallery">Галерея</label>
+					 </li>
+					 
+					 <li>
+					     <input type="checkbox" name="basket" id="filter-basket">
+					     <label for="filter-basket">Корзина</label>
+					 </li>
+				   </ul>
+			</fieldset>
+			      <button type="submit">Показать</button>
+			</form> 
+
+
+
+</section>
+
+
 <section class="catalog">
     
-	<h2> Список товаров</h2>
+	<h2 class="visually-hidden"> Список товаров</h2>
 
 <article>
-         <h2>Sedona</h2>
+         <h2 class="visually-hidden">Sedona</h2>
         <img src="img/img-sedona.png" width="364" height="572" alt="макет седона">
 </article>
 
 <article>
-         <h2>Pink</h2>
+         <h2 class="visually-hidden">Pink</h2>
         <img src="img/img-pink.jpg" width="364" height="572" alt="макет пинк">
 </article>
 
 <article>
-         <h2>Barbershop</h2>
+         <h2 class="visually-hidden">Barbershop</h2>
         <img src="img/img-barbershop.png" width="364" height="572" alt="макет барбершоп">
 </article>
 
 <article>
-         <h2>Misaka</h2>
+         <h2 class="visually-hidden">Mishka</h2>
         <img src="img/img-mishka.png" width="364" height="572" alt="макет мишки">
 </article>
 
 <article>
-         <h2>Учёба</h2>
+         <h2 class="visually-hidden">Учёба</h2>
         <img src="img/img-aplus.png" width="364" height="572" alt="макет Aplus ">
 </article>
 
 <article>
-         <h2>Кваст</h2>
+         <h2 class="visually-hidden">Квас</h2>
         <img src="img/img-kvast.png" width="364" height="572" alt="макет кваса">
 </article>
 
@@ -102,7 +165,7 @@
 <section class="contacts">
 
      <div>
-	       <img src="img/map.png" alt="карта проезда">
+	       <img src="img/map.png" alt="офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
 		   <img src="img/map-marker.png" alt="мы здесь">
 
     </div>
@@ -120,6 +183,35 @@
  </div>
 
 </section>
+
+<form action="#" method="post">
+
+   <fieldset>
+       <legend>Напишите нам</legend>
+	   
+	   <button type="button"><img src="img/close-cross.svg" alt="закрыть форму"></button>
+	 
+    	 
+             <label for="name">Ваше имя</label> <br>
+             <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+   
+   
+   
+          <label for="email">Ваш e-mail</label> <br>
+          <input type="email" name="email" id="email" placeholder="email@example.com">
+   
+   
+   
+          <label for="writing_us">Текст письма</label> <br>
+          <textarea name="letter" id="writing_us">В свободной форме</textarea>
+   
+   
+         <input type="submit" value="Отправить">
+   </fieldset>  
+   
+</form>
+   
+
 
 </main>
   <footer>
