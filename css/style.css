@@ -1,0 +1,212 @@
+body {
+  margin:0;
+  padding:0;
+  
+  font-family: "Roboto", sans-serif;
+  font-size:16px;
+  line-height: 24px;
+  font-weight:400;
+  color: #000000;
+  text-transform: none;
+}
+
+a {
+ text-decoration:none;
+}
+
+ 
+.navigation{
+   font-size: 16px;
+   line-height: 30px;
+   color: #000000;
+   text-transform: uppercase;
+   
+   background-color: #eeeeee;
+}
+
+.site-navigation{
+  list-style: none;
+}
+
+.navigation a,
+.site-navigation a{
+  color: #000000;
+}
+
+.navigation a:hover,
+.navigation a:focus,
+.site-navigation a:hover,
+.site-navigation a:focus{
+    color: #fb565a;
+}
+
+.navigation a:active{
+	color: #a6a6a6;
+}
+
+.advantage-site h2,
+.advantage-app h2,
+.advantage-pre h2{
+  font-size: 24px;
+  font-weight:700;
+  line-height: 30px;
+  
+}
+
+.advantages p{
+  font-size: 16px;
+  line-height:24px;
+  color: #283136;
+}
+
+.advantage-site .button{
+    background-color: #fb565a;
+}
+
+.advantage-app .button{
+    background-color: #00ca74;
+	width: 260px;
+}
+
+.advantage-pre .button{
+    background-color: #efc84a;
+}
+
+.title{
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.studio .text{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.studio ul{
+ list-style: none;
+ padding-left: 0;
+ line-height:45px;
+}
+
+.studio span{
+    color: #fb565a;
+    }
+    
+ .slogan{
+   font-size: 16px;
+   font-weight:700;
+   text-transform: uppercase;
+ }   
+
+.col b{
+  font-size:45px;
+  font-weight: 700;
+}
+
+.col{
+ font-size: 16px;
+ line-height:18px;
+}
+
+.partners-link{
+	list-style: none;
+}
+
+.partner-1 a:hover,
+.partner-1 a:focus{
+	
+}
+
+.address{
+	width: 319px;
+	height: 310px;
+	text-align:center;
+}
+
+.address span{
+	font-weight: 700;
+	font-size: 18px;
+	line-height:30px;
+}
+
+.address p{
+	font-size:16px;
+	line-height:18px;
+}
+
+.social-media a{
+	background-color: #e1e1e1;
+	padding:20px;
+	margin:10px;
+	border: 1px solid #e1e1e1;
+	border-radius: 50%;
+	
+}
+
+.social-media a:hover,
+.social-media a:focus{
+	background-color: #e74246;
+}
+
+.social-media a:active{
+	background-color: #d7373b;
+
+}
+
+footer span{
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 36px;
+}
+
+footer p{
+	line-height:22px;
+}
+
+.button{
+	color: #ffffff;
+	background-color: #fb565a;
+	height: 47px;
+	width: 160px;
+}
+
+/*карточка товара*/
+
+
+/*.catalog-items{
+	width: 360px;
+	height: 814px; 
+}*/
+
+.catalog-item{
+	background-color: #eeeeee;
+	width: 360px;
+	height: 226px;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.catalog-item h2{
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.catalog-item p{
+	padding-top: 10px;
+	padding-bottom: 15px;
+	line-height: 18px;
+}
+
+
+
+/*.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}                                  */

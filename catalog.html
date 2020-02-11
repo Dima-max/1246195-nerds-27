@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
     <title>Магазин готовых шаблонов</title>
-	<link href="style.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header>
 
-    <nav>
-      <ul>
+    <nav class="navigation">
+      <ul class="site-navigation">
            <li> <a href="index.html"> <img src="img/nerds-logo.png" alt="Логотип"> </a></li>
            <li> <a href="index.html">Студия</a> </li>
            <li> <a href="#">Клиенты</a> </li>
@@ -17,7 +17,7 @@
            <li> <a href="#">Контакты</a> </li>
       </ul>
 
-      <a href="#"> <img src="img/cart-icon.png" alt="корзинка"> Корзина </a>
+      <a href="#"> <img src="img/cart-icon.svg" alt="корзинка"> Корзина </a>
 
     </nav>
 
@@ -45,7 +45,7 @@
   <ul>
   <li>по цене</li>
    <li>  по типу</li>
-    <li> по названию</li>
+   <li> по названию</li>
   </ul>
 </section>
 
@@ -115,34 +115,68 @@
     
 	<h2 class="visually-hidden"> Список товаров</h2>
 
-<article>
-         <h2 class="visually-hidden">Sedona</h2>
-        <img src="img/img-sedona.png" width="364" height="572" alt="макет седона">
+<article class="catalog-items">
+        <img src="img/img-sedona.png" width="360" height="575" alt="макет седона">
+		
+		<div class="catalog-item visually-hidden">
+		  <h2>Sedona</h2>
+		  <p> Информационный сайт <br>
+		        для туристов</p>
+		  <button class="button" type="button">9 900 руб</button>
+		</div>
 </article>
 
-<article>
-         <h2 class="visually-hidden">Pink</h2>
-        <img src="img/img-pink.jpg" width="364" height="572" alt="макет пинк">
+<article class="catalog-items">
+         <img src="img/img-pink.jpg" width="360" height="575" alt="макет пинк">
+		
+		<div class="catalog-item visually-hidden">
+		 <h2>Pink App</h2>
+		 <p>Продуктовый лендинг <br>приложения для iOS и Android</p>
+		 <button class="button" type="button">9 900 руб</button>
+		 </div>
 </article>
 
-<article>
-         <h2 class="visually-hidden">Barbershop</h2>
-        <img src="img/img-barbershop.png" width="364" height="572" alt="макет барбершоп">
+<article class="catalog-items">
+        
+        <img src="img/img-barbershop.png" width="360" height="575" alt="макет барбершоп">
+		<div class="catalog-item visually-hidden">
+		 <h2>Barbershop</h2>
+		 <p>Сайт салона красоты.<br> Для мужчин, да.</p>
+		 <button class="button" type="button">9 900 руб</button>
+		 </div>
 </article>
 
-<article>
-         <h2 class="visually-hidden">Mishka</h2>
-        <img src="img/img-mishka.png" width="364" height="572" alt="макет мишки">
+<article class="catalog-items">
+         
+        <img src="img/img-mishka.png" width="360" height="575" alt="макет мишки">
+		
+		<div class="catalog-item visually-hidden">
+		 <h2>Mishka</h2>
+		 <p>Интернет-магазин <br>  вязаных игрушек</p>
+		 <button class="button" type="button">9 900 руб</button>
+		 </div>
 </article>
 
-<article>
-         <h2 class="visually-hidden">Учёба</h2>
-        <img src="img/img-aplus.png" width="364" height="572" alt="макет Aplus ">
+<article class="catalog-items">
+         
+        <img src="img/img-aplus.png" width="360" height="575" alt="макет Aplus ">
+		
+		<div class="catalog-item visually-hidden">
+		<h2>Aplus</h2>
+		<p>Лендинг курсов повышения<br> квалификации</p>
+		<button class="button" type="button">9 900 руб</button>
+		</div>
+		
 </article>
 
-<article>
-         <h2 class="visually-hidden">Квас</h2>
-        <img src="img/img-kvast.png" width="364" height="572" alt="макет кваса">
+<article class="catalog-items">
+         <img src="img/img-kvast.png" width="360" height="575" alt="макет кваса">
+		
+		<div class="catalog-item visually-hidden">
+		 <h2>Кваст</h2>
+		 <p>Промо-сайт производителя<br> крафтового кваса</p>
+		<button class="button" type="button">9 900 руб</button>
+		</div>
 </article>
 
 <div class="pagination">
@@ -154,7 +188,7 @@
          
       </ol>
 	  
-	     <button> Следущая </button>
+	     <button type="button"> Следущая </button>
  </div>
 
 </section>
@@ -179,17 +213,35 @@
 
     <p>тел. +7 (812) 275-75-75</p>
 	
-	<button> Напишите нам</button>
+	<button class="button" type="button"> Напишите нам</button>
  </div>
 
 </section>
 
-<form action="#" method="post">
+
+
+</main>
+ <footer>
+
+<div class="social-media">
+
+     <a href="#" aria-label="Вконтакте"> <img src="img/vk-icon.svg" alt="Вконтакте"> </a>
+     <a href="#" aria-label="Фэйсбук"> <img src="img/fb-icon.svg" alt="Фэйсбук"> </a>
+     <a href="#" aria-label="Инстаграм"> <img src="img/insta-icon.svg" alt="Инстаграм"> </a>
+</div>
+
+ <span>Давайте дружить, это выгодно!</span>
+ 
+ <p>Скидка 10% для друзей из социальных сетей.</p>
+
+</footer>
+  
+  <form action="#" method="post">
 
    <fieldset>
        <legend>Напишите нам</legend>
 	   
-	   <button type="button"><img src="img/close-cross.svg" alt="закрыть форму"></button>
+	   <button><img src="img/close-cross.svg" alt="закрыть форму"> </button>
 	 
     	 
              <label for="name">Ваше имя</label> <br>
@@ -206,30 +258,10 @@
           <textarea name="letter" id="writing_us">В свободной форме</textarea>
    
    
-         <input type="submit" value="Отправить">
+         <input class="button" type="submit" value="Отправить">
    </fieldset>  
    
 </form>
-   
-
-
-</main>
-  <footer>
-     
-	 <div class="social-media">
-
-     <a href="#"> <img src="img/vk-icon.svg" alt="VC"> </a>
-     <a href="#"> <img src="img/fb-icon.svg" alt="Facebook"> </a>
-     <a href="#"> <img src="img/insta-icon.svg" alt="Instagram"> </a>
-
-
- <p>Давайте дружить, это выгодно!</p>
- <p>Скидка 10% для друзей из социальных сетей.</p>
-
-</div>
-
-
-  </footer>
 </body>
 
 </html>
